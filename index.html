@@ -17,35 +17,36 @@
                 <div class="line">
                     <div class="grup">
                         <label>Código</label>
-                        <input id="codigo" type="number" maxlength="4">
+                        <input id="codigo" type="number" maxlength="4" placeholder="0">
                     </div>
                     <div class="grup">
                         <label>Identificador</label>
-                        <input id="identificador" type="text">
+                        <input id="identificador" type="text" placeholder="Ex: nApol" onchange="ValidaTipo()">
                     </div>
                 </div>
                 <div class="grup">        
                     <label>Validações</label>
-                    <input id="validacoes" type="text">
+                    <input id="validacoes" type="text" placeholder='Ex: "<seg>", "Tamanho", "Permitido"'>
                 </div>
                 <div class="grup">
                     <label>Retorno</label>
-                    <input id="retorno" type="text">
+                    <input id="retorno" type="text" placeholder="Ex: A Apólice do Seguro está com o tamanho incorreto.">
                 </div>
                 <div class="grup">
                     <label>Como Resolver?</label>
-                    <textarea  id="detalhes" rows="10">
-Siga os seguintes passos:
-                        
--
-                    </textarea>
+                    <textarea  id="detalhes" rows="10" value="Siga os seguintes passos:\n\n-"></textarea>
                 </div>
                 <div class="btn">
                     <button onclick="gerarJson()">Gerar</button>
                     <button onclick="limpar()">Limpar</button>
                 </div>
                 <div class="result">
-                    <textarea  id="resultado" rows="10"></textarea>
+                    <textarea  id="resultado" rows="10" spellcheck="false"></textarea>
+                    <div class="line">
+                        <label id="copiado"></label>
+                        <button id="btnCopiar" onclick="copiar()">Copiar</button>
+                    </div>
+
                 </div>
             </div>
         </div>
