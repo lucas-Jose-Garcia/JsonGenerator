@@ -26,20 +26,22 @@
                 </div>
                 <div class="grup">        
                     <label>Validações</label>
-                    <input type="text">
+                    <input id="validacoes" type="text">
                 </div>
                 <div class="grup">
                     <label>Retorno</label>
-                    <input type="text">
+                    <input id="retorno" type="text">
                 </div>
                 <div class="grup">
                     <label>Como Resolver?</label>
                     <textarea  id="detalhes" rows="10"></textarea>
                 </div>
                 <div class="btn">
-                    <button onclick="ConverterDetalhes()">Gerar</button>
+                    <button onclick="gerarJson()">Gerar</button>
                     <button>Limpar</button>
-
+                </div>
+                <div class="result">
+                    <textarea  id="resultado" rows="10"></textarea>
                 </div>
             </div>
         </div>
