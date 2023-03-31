@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #0a2956;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bord {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 700px;
+    height: 800px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10%;
+    padding-top: 50px;
+}
+
+.card {
+    width: 550px;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+.grup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 2px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px 10px 9px 10px;
+    height: 35px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+.line {
+    display: flex;
+    gap: 20px;
+}
+
+#codigo {
+    width: 100px;
+}
+
+#identificador {
+    width: 430px;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
+button {
+    height: 38px;
+	width: 100px;
+	background: #3b6281;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+    transition: 0.5;
+}
+
+button:hover {
+    background: #5088b6;
+    cursor: pointer;
+}
