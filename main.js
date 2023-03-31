@@ -13,12 +13,20 @@ function gerarJson() {
     ${validacoes != '' ? `"validacoes": ${validacoes},` : ''}
     "retorno": "${retorno}",
     "detalhes" "${detalhes}"
-}
-    `
-    resultado.value = output
+}`
+    resultado.value = output;
+    limpar()
 }
 
 function converterDetalhes(detalhes) {
     const output = detalhes.replace(/(?:\r\n|\r|\n)/g, '\\n');
     return output
+}
+
+function limpar() {
+    document.getElementById('codigo').value = '';
+    document.getElementById('identificador').value = '';
+    document.getElementById('validacoes').value = '';
+    document.getElementById('retorno').value = '';
+    document.getElementById('detalhes').value = '';
 }
